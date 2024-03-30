@@ -5,7 +5,7 @@ After=network.target
 User=ubuntu
 Group=www-data
 WorkingDirectory=/home/ubuntu/modelapi
-ExecStart=/home/ubuntu/venv/bin/uvicorn app:app --host 127.0.0.1  --post 8000
+ExecStart=/home/ubuntu/venv/bin/uvicorn app:app --host 127.0.0.1  --port 8000
 Restart=always
 [Install]
 WantedBy=multi-user.target
